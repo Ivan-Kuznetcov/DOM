@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>
+        Есть 3 картинки: "1","2","3"
+    </p>
+    <p>
+        Введите, какую показать:
+    </p>
+
+    <form id="222">
+    <input type="text" id="dan" value="">
+    </form>
+
+    <input type="button" value="Готово" id="gotovo">
+
+    <p>
+    <img src="img/1.png" alt="" class="img1">
+    </p>
+    
+    <script>
+    let i=2;
+       document.getElementById("222").onmouseout=function()
+        {
+            let elem=event.target;
+            i=elem.value
+        }
+        document.getElementById("gotovo").onclick=function(){
+            
+            document.querySelector(".img1").src="img/"+i+".png"
+
+        }
+        
+    </script>
+    <a href="2zadanie.html">2 задание</a>
+</body>
+</html>

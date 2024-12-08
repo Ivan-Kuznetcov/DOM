@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <input type="button" value="Hello" id="111">
+    </p>
+    <script>
+        document.getElementById("111").onmouseover=function()
+        {
+            let elem=event.target;
+            if (elem.type=="button")
+            {
+                elem.focus();
+                elem.value="World!";
+            }
+        }
+        document.getElementById("111").onmouseout=function()
+        {
+            let elem=event.target;
+            if (elem.type=="button")
+            {
+                elem.blur();
+                elem.value="Hello";
+            }
+        }
+    </script>
+    <a href="3zadanie.html"> 3 задание</a>
+</body>
+</html>

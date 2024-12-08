@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" value="Введите толщину" id="tolsh" >
+    <input type="color" value="Введите цвет" id="color">
+    <input type="button" value="Изменить" id="gg">
+
+    <table id="table" style="border: 3rem solid;">
+        <thead>
+          <tr>
+            <th>Заголовок 1</th>
+            <th>Заголовок 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ячейка 1,1</td>
+            <td>Ячейка 1,2</td>
+          </tr>
+          <tr>
+            <td>Ячейка 2,1</td>
+            <td>Ячейка 2,2</td>
+          </tr>
+        </tbody>
+      </table>
+    <script>
+        document.getElementById("gg").onclick=function(){
+            document.getElementById("table").style.border=document.querySelector("#tolsh").value+"rem solid"+document.querySelector("#color").value;
+        }
+    </script>
+    <a href="5zadanie.html">5 задание</a>
+</body>
+</html>

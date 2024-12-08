@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="2" value="">
+    <p><input type="text" id="3" value=""></p>
+    <p><input type="button" value="Сумма" id="111" ></p>
+    <p><span id="1">РЕЗУЛЬТАТ</span></p>
+
+    
+
+    <script>
+        document.getElementById("111").onclick=function(){
+            let i = parseInt(document.getElementById("2").value) + parseInt(document.getElementById("3").value);
+            document.getElementById("1").textContent = i ;
+            //
+        }
+
+
+    </script>
+</body>
+</html>
