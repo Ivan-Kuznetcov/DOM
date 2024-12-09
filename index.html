@@ -14,9 +14,8 @@
         Введите, какую показать:
     </p>
 
-    <form id="222">
+
     <input type="text" id="dan" value="">
-    </form>
 
     <input type="button" value="Готово" id="gotovo">
 
@@ -26,15 +25,9 @@
     
     <script>
     let i=2;
-       document.getElementById("222").onmouseout=function()
-        {
-            let elem=event.target;
-            i=elem.value
-        }
         document.getElementById("gotovo").onclick=function(){
-            
+            i=document.querySelector("#dan").value
             document.querySelector(".img1").src="img/"+i+".png"
-
         }
         
     </script>
